@@ -1,6 +1,15 @@
 {
-  "extends": "astro/tsconfigs/strict",
+  "extends": "astro/tsconfigs/base",
   "compilerOptions": {
-    "jsx": "preserve"
+    // "jsx": "preserve",
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": 
+    {
+        "@components/*": ["src/components/*"],
+        "@layouts/*": ["src/layouts/*"],
+        "@data/*": ["src/data/*"],
+        "@services/*": ["src/services/*"]
+    }
   }
 }
