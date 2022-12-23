@@ -1,15 +1,15 @@
 ---
+import WebLayout from '@layouts/WebLayout.astro';
+import Bio from '@components/Bio.vue';
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="pt-BR" class="scroll-smooth">
+<WebLayout 
+    title       = "Welcome"
+    description = "Personal Portfolio"
+    keywords    = "front end developer, website"
+    author      = "Ricardo Hamada"
+>
+<Bio client:visible/>
+</WebLayout>
 </html>
+
